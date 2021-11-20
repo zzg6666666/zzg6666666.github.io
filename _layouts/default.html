@@ -1,12 +1,24 @@
----
-layout: compress
----
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 
-{% assign assets_base_url = site.url %}
-{% if site.cdn.jsdelivr.enabled %}
-{% assign assets_base_url = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: '@master' %}
-{% endif %}
-{% assign assets_images_url = '<img src="' | append: assets_base_url | append: "/images" %}
-{% include header.html %}
-    {{ content | replace: '<img src="/images', assets_images_url }}
-{% include footer.html %}
+{%- include head.html -%}
+
+<body>
+
+   {%- include header.html -%}
+
+   <div class="content">
+      <div class="container">
+         {{ content }}
+      </div>
+   </div><!-- end .content -->
+
+   {%- include footer.html -%}
+   {%- include scripts.html -%}
+
+</body>
+
+</html>
