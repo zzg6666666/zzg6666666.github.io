@@ -1,0 +1,1 @@
+import{_ as e,o as t,c,b as _}from"./app-tCTvTxt3.js";const o={},n=_("p",null,"001 page in c语言",-1),s=[n];function a(r,l){return t(),c("div",null,s)}const d=e(o,[["render",a],["__file","001.html.vue"]]);export{d as default};
