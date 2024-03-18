@@ -1,0 +1,34 @@
+import{_ as a,o as s,c as n,a as t}from"./app-9QopI4S6.js";const e={},p=t(`<h2 id="free-rtos创建任务的函数原型" tabindex="-1"><a class="header-anchor" href="#free-rtos创建任务的函数原型" aria-hidden="true">#</a> free RTOS创建任务的函数原型</h2><p>free RTOS有两个创建函数函数，动态分配内存创建任务和静态分配内存创建任务</p><h3 id="动态分配内存创建任务" tabindex="-1"><a class="header-anchor" href="#动态分配内存创建任务" aria-hidden="true">#</a> 动态分配内存创建任务</h3><div class="language-c line-numbers-mode" data-ext="c"><pre class="language-c"><code>	BaseType_t <span class="token function">xTaskCreate</span><span class="token punctuation">(</span>	
+							TaskFunction_t pxTaskCode<span class="token punctuation">,</span><span class="token comment">//任务函数</span>
+							<span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span> <span class="token keyword">const</span> pcName<span class="token punctuation">,</span>
+							<span class="token keyword">const</span> configSTACK_DEPTH_TYPE usStackDepth<span class="token punctuation">,</span><span class="token comment">//栈深度</span>
+							<span class="token keyword">void</span> <span class="token operator">*</span> <span class="token keyword">const</span> pvParameters<span class="token punctuation">,</span><span class="token comment">//参数</span>
+							UBaseType_t uxPriority<span class="token punctuation">,</span><span class="token comment">//优先级</span>
+							TaskHandle_t <span class="token operator">*</span> <span class="token keyword">const</span> pxCreatedTask <span class="token comment">//句柄</span>
+                        	<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="参数解释" tabindex="-1"><a class="header-anchor" href="#参数解释" aria-hidden="true">#</a> 参数解释</h3><div class="language-c line-numbers-mode" data-ext="c"><pre class="language-c"><code>pxTaskCode    <span class="token operator">:</span> 函数指针，任务永远不应该退出，是一个死循环
+pcName        <span class="token operator">:</span> 任务的名称，仅用于调试的目的，有长度限制
+usStackDepth  <span class="token operator">:</span> 任务的栈，单位为word，确定栈的大小不容易，一般用估计或者是查看汇编确定
+pvParameters  <span class="token operator">:</span> 调用 pvTaskCode 函数指针时使用的参数<span class="token punctuation">,</span> <span class="token function">pvTaskCode</span><span class="token punctuation">(</span>pvParameters<span class="token punctuation">)</span>
+uxPriority    <span class="token operator">:</span> 任务的优先级，数值越小，优先级越低
+pxCreatedTask <span class="token operator">:</span> 是任务的句柄，用于操纵该任务，如果不需要，可以填 <span class="token constant">NULL</span>
+BaseType_t    <span class="token operator">:</span> 返回值类型，创建任务成功返回pdPASS<span class="token punctuation">,</span>失败返回pdFAIL
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="静态分配内存创建任务" tabindex="-1"><a class="header-anchor" href="#静态分配内存创建任务" aria-hidden="true">#</a> 静态分配内存创建任务</h3><div class="language-c line-numbers-mode" data-ext="c"><pre class="language-c"><code>	TaskHandle_t <span class="token function">xTaskCreateStatic</span><span class="token punctuation">(</span>	
+									TaskFunction_t pxTaskCode<span class="token punctuation">,</span>
+									<span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span> <span class="token keyword">const</span> pcName<span class="token punctuation">,</span>
+									<span class="token keyword">const</span> <span class="token class-name">uint32_t</span> ulStackDepth<span class="token punctuation">,</span>
+									<span class="token keyword">void</span> <span class="token operator">*</span> <span class="token keyword">const</span> pvParameters<span class="token punctuation">,</span>
+									UBaseType_t uxPriority<span class="token punctuation">,</span>
+									StackType_t <span class="token operator">*</span> <span class="token keyword">const</span> puxStackBuffer<span class="token punctuation">,</span>
+									StaticTask_t <span class="token operator">*</span> <span class="token keyword">const</span> pxTaskBuffer 
+									<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="参数解释-1" tabindex="-1"><a class="header-anchor" href="#参数解释-1" aria-hidden="true">#</a> 参数解释</h3><div class="language-c line-numbers-mode" data-ext="c"><pre class="language-c"><code>pxTaskCode     <span class="token operator">:</span> 函数指针，任务永远不应该退出，是一个死循环
+pcName         <span class="token operator">:</span> 任务的名称，仅用于调试的目的，有长度限制
+ulStackDepth   <span class="token operator">:</span> 任务的栈，单位为word，确定栈的大小不容易，一般用估计或者是查看汇编确定
+pvParameters   <span class="token operator">:</span> 调用 pvTaskCode 函数指针时使用的参数<span class="token punctuation">,</span> <span class="token function">pvTaskCode</span><span class="token punctuation">(</span>pvParameters<span class="token punctuation">)</span>
+uxPriority     <span class="token operator">:</span> 任务的优先级，数值越小，优先级越低
+pxCreatedTask  <span class="token operator">:</span> 是任务的句柄，用于操纵该任务，如果不需要，填<span class="token constant">NULL</span>
+puxStackBuffer <span class="token operator">:</span> 静态分配的栈内存，比如可以传入一个数组， 它的大小是ulStackDepth<span class="token operator">*</span><span class="token number">4</span>。
+pxTaskBuffer   <span class="token operator">:</span> 静态分配的StaticTask_t结构体的指针
+TaskHandle_t   <span class="token operator">:</span> 返回值类型，任务创建成功：返回任务句柄； 失败：<span class="token constant">NULL</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="创建任务" tabindex="-1"><a class="header-anchor" href="#创建任务" aria-hidden="true">#</a> 创建任务</h2><p>分别采用俩种函数，创建两个任务</p><h3 id="" tabindex="-1"><a class="header-anchor" href="#" aria-hidden="true">#</a></h3>`,13),o=[p];function c(i,r){return s(),n("div",null,o)}const d=a(e,[["render",c],["__file","renwu.html.vue"]]);export{d as default};
