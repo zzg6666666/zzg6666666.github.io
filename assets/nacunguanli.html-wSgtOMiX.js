@@ -1,4 +1,4 @@
-import{_ as n,o as s,c as a,a as e}from"./app-MpY3xo6F.js";const t={},p=e(`<p>在free RTOS中，提供了<code>vPortFree()</code>和<code>pvPortMalloc()</code>进行内管的管理，而在C标准库中，也提供了<code>malloc()</code>和<code>free()</code>进行内存管理，但是标准库并没有考虑到嵌入式系统中所存在的资源紧缺的情况。free RTOS提供了多种<code>vPortFree()</code>和<code>pvPortMalloc()</code>，对应不同的情况。</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>heap_1.c    分配简单，不能释放内存
+import{_ as n,o as s,c as a,a as e}from"./app-k2np88c5.js";const t={},p=e(`<p>在free RTOS中，提供了<code>vPortFree()</code>和<code>pvPortMalloc()</code>进行内管的管理，而在C标准库中，也提供了<code>malloc()</code>和<code>free()</code>进行内存管理，但是标准库并没有考虑到嵌入式系统中所存在的资源紧缺的情况。free RTOS提供了多种<code>vPortFree()</code>和<code>pvPortMalloc()</code>，对应不同的情况。</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>heap_1.c    分配简单，不能释放内存
 heap_2.c    不能合并内存碎片 
 heap_3.c    使用标准库进行内存管理
 heap_4.c    可以合并内存碎片
