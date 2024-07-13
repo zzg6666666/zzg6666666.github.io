@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-rc.13">
+    <script>
+      (function() {
+        const userMode = localStorage.getItem('vuepress-reco-color-scheme') || 'auto';
+        const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+        if (userMode === 'dark' || (userMode === 'auto' && systemDarkMode)) {
+          document.documentElement.classList.toggle('dark', true);
+        }
+      })();
+    </script>
+    <title>启动文件详解 | vuepress-theme-reco</title><meta name="description" content="Just playing around">
+    <link rel="preload" href="/assets/style-CnJ8-sUE.css" as="style"><link rel="stylesheet" href="/assets/style-CnJ8-sUE.css">
+    <link rel="modulepreload" href="/assets/app-Pv2J7xBQ.js"><link rel="modulepreload" href="/assets/qidongwenjianxiangjie.html-DuxP3Nzk.js">
+    <link rel="prefetch" href="/assets/timeline.html-DDVWYcPJ.js" as="script"><link rel="prefetch" href="/assets/posts.html-DoEu0Vjy.js" as="script"><link rel="prefetch" href="/assets/friendship-link.html-BcRMdu2p.js" as="script"><link rel="prefetch" href="/assets/1.html-D91LQYtD.js" as="script"><link rel="prefetch" href="/assets/1.html-CinktQfu.js" as="script"><link rel="prefetch" href="/assets/1.html-DnzlcA0t.js" as="script"><link rel="prefetch" href="/assets/1.html-U5ePGo2y.js" as="script"><link rel="prefetch" href="/assets/1.html-vMXRStFh.js" as="script"><link rel="prefetch" href="/assets/1.html-DiOfml1R.js" as="script"><link rel="prefetch" href="/assets/1.html-vLWm9nUO.js" as="script"><link rel="prefetch" href="/assets/1.html-CXUaq8EK.js" as="script"><link rel="prefetch" href="/assets/1.html-C3C88Qu-.js" as="script"><link rel="prefetch" href="/assets/1.html-BtiUPRXi.js" as="script"><link rel="prefetch" href="/assets/1.html-CYZyFvW3.js" as="script"><link rel="prefetch" href="/assets/1.html--mODGlhZ.js" as="script"><link rel="prefetch" href="/assets/1.html-CQkT9go1.js" as="script"><link rel="prefetch" href="/assets/1.html-BhmxwFEA.js" as="script"><link rel="prefetch" href="/assets/1.html-DOngWkh7.js" as="script"><link rel="prefetch" href="/assets/1.html-CMuY13ig.js" as="script"><link rel="prefetch" href="/assets/1.html-CwA_mt1z.js" as="script"><link rel="prefetch" href="/assets/1.html-BQtb0t4D.js" as="script"><link rel="prefetch" href="/assets/2.html-DcXq33Vd.js" as="script"><link rel="prefetch" href="/assets/index.html-DpNXYzf_.js" as="script"><link rel="prefetch" href="/assets/zhizhenbianliang.html-BP3b6pV9.js" as="script"><link rel="prefetch" href="/assets/huanxingshuzu.html-Dxgaalh9.js" as="script"><link rel="prefetch" href="/assets/chushihua.html-BzTNXzP8.js" as="script"><link rel="prefetch" href="/assets/renwu.html-D5Kph6e7.js" as="script"><link rel="prefetch" href="/assets/nacunguanli.html-BTM7ycQP.js" as="script"><link rel="prefetch" href="/assets/liebiao.html-D8DtqXnW.js" as="script"><link rel="prefetch" href="/assets/jichu.html-D0LxbJoy.js" as="script"><link rel="prefetch" href="/assets/duilie.html-B2ri1RpB.js" as="script"><link rel="prefetch" href="/assets/RTTdayinlog.html-vLdHQlHl.js" as="script"><link rel="prefetch" href="/assets/gitmingling.html-Dbdfouio.js" as="script"><link rel="prefetch" href="/assets/cong0kaishixiechuankouqudong.html-CeaKVjjB.js" as="script"><link rel="prefetch" href="/assets/jicunqi.html-BpEcuYTo.js" as="script"><link rel="prefetch" href="/assets/huibianzhiling.html-7pYe1sth.js" as="script"><link rel="prefetch" href="/assets/api.html-C6Ko2R64.js" as="script"><link rel="prefetch" href="/assets/home.html-_ootLJHO.js" as="script"><link rel="prefetch" href="/assets/plugin.html-XYirJnc8.js" as="script"><link rel="prefetch" href="/assets/theme.html-BvaXdvJP.js" as="script"><link rel="prefetch" href="/assets/404.html-DlGyDUUH.js" as="script"><link rel="prefetch" href="/assets/Valine.min-nFdK83pj.js" as="script"><link rel="prefetch" href="/assets/giscus-2a044aea-CdPDkb7_.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container series--no show-catalog"><header class="navbar-container not-open"><div class="site-brand nav-item"><img class="logo" src="/logo.png" alt="vuepress-theme-reco"><a href="/" class="site-name can-hide">vuepress-theme-reco</a></div><div class="nav-item navbar-links-wrapper" style=""><div><form class="search-box" role="search"><input type="search" autocomplete="off" spellcheck="false" value><!----></form></div><nav class="navbar-links"><!--[--><div class="navbar-links__item"><a href="/" class="link router-link-active" aria-label="Home"><!--[--><!--]--><span class="xicon-container left"><!--[--><!----><!--]--><span class="xicon-content" style="color:inherit;font-size:14px;"><!--[-->Home<!--]--></span></span><!--[--><!--]--></a></div><div class="navbar-links__item"><a href="/categories/reco/1/" class="link" aria-label="Categories"><!--[--><!--]--><span class="xicon-container left"><!--[--><!----><!--]--><span class="xicon-content" style="color:inherit;font-size:14px;"><!--[-->Categories<!--]--></span></span><!--[--><!--]--></a></div><div class="navbar-links__item"><a href="/tags/tag1/1/" class="link" aria-label="Tags"><!--[--><!--]--><span class="xicon-container left"><!--[--><!----><!--]--><span class="xicon-content" style="color:inherit;font-size:14px;"><!--[-->Tags<!--]--></span></span><!--[--><!--]--></a></div><div class="navbar-links__item"><a class="link" href="https://github.com/vuepress-reco/vuepress-theme-reco-next" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><!--[--><!--]--><span class="xicon-container left"><!--[--><!----><!--]--><span class="xicon-content" style="color:inherit;font-size:14px;"><!--[-->GitHub<!--]--></span></span><span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span><!--[--><!--]--></a></div><!--]--></nav><span class="xicon-container btn-toggle-dark-mode btn--dark-mode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" style="width:20px;height:20px;font-size:20px;color:inherit;"><path d="M15 2h2v3h-2z" fill="currentColor"></path><path d="M27 15h3v2h-3z" fill="currentColor"></path><path d="M15 27h2v3h-2z" fill="currentColor"></path><path d="M2 15h3v2H2z" fill="currentColor"></path><path d="M5.45 6.884l1.414-1.415l2.121 2.122l-1.414 1.414z" fill="currentColor"></path><path d="M23 7.58l2.121-2.12l1.414 1.414l-2.121 2.121z" fill="currentColor"></path><path d="M23.002 24.416l1.415-1.414l2.12 2.122l-1.413 1.414z" fill="currentColor"></path><path d="M5.47 25.13L7.59 23L9 24.42l-2.12 2.12l-1.41-1.41z" fill="currentColor"></path><path d="M16 8a8 8 0 1 0 8 8a8 8 0 0 0-8-8zm0 14a6 6 0 0 1 0-12z" fill="currentColor"></path></svg></span><span class="xicon-container btn-toggle-menus"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" style="width:20px;height:20px;font-size:20px;color:inherit;"><circle cx="16" cy="8" r="2" fill="currentColor"></circle><circle cx="16" cy="16" r="2" fill="currentColor"></circle><circle cx="16" cy="24" r="2" fill="currentColor"></circle></svg></span></div></header><!----><div class="mobile-menus-container"><nav class="navbar-links mobile"><!--[--><div class="navbar-links__item"><a href="/" class="link router-link-active" aria-label="Home"><!--[--><!--]--><span class="xicon-container left"><!--[--><!----><!--]--><span class="xicon-content" style="color:inherit;font-size:14px;"><!--[-->Home<!--]--></span></span><!--[--><!--]--></a></div><div class="navbar-links__item"><a href="/categories/reco/1/" class="link" aria-label="Categories"><!--[--><!--]--><span class="xicon-container left"><!--[--><!----><!--]--><span class="xicon-content" style="color:inherit;font-size:14px;"><!--[-->Categories<!--]--></span></span><!--[--><!--]--></a></div><div class="navbar-links__item"><a href="/tags/tag1/1/" class="link" aria-label="Tags"><!--[--><!--]--><span class="xicon-container left"><!--[--><!----><!--]--><span class="xicon-content" style="color:inherit;font-size:14px;"><!--[-->Tags<!--]--></span></span><!--[--><!--]--></a></div><div class="navbar-links__item"><a class="link" href="https://github.com/vuepress-reco/vuepress-theme-reco-next" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><!--[--><!--]--><span class="xicon-container left"><!--[--><!----><!--]--><span class="xicon-content" style="color:inherit;font-size:14px;"><!--[-->GitHub<!--]--></span></span><span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span><!--[--><!--]--></a></div><!--]--></nav><div class="appearance"><span>Appearance</span><span class="xicon-container btn-toggle-dark-mode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" style="width:20px;height:20px;font-size:20px;color:inherit;"><path d="M15 2h2v3h-2z" fill="currentColor"></path><path d="M27 15h3v2h-3z" fill="currentColor"></path><path d="M15 27h2v3h-2z" fill="currentColor"></path><path d="M2 15h3v2H2z" fill="currentColor"></path><path d="M5.45 6.884l1.414-1.415l2.121 2.122l-1.414 1.414z" fill="currentColor"></path><path d="M23 7.58l2.121-2.12l1.414 1.414l-2.121 2.121z" fill="currentColor"></path><path d="M23.002 24.416l1.415-1.414l2.12 2.122l-1.413 1.414z" fill="currentColor"></path><path d="M5.47 25.13L7.59 23L9 24.42l-2.12 2.12l-1.41-1.41z" fill="currentColor"></path><path d="M16 8a8 8 0 1 0 8 8a8 8 0 0 0-8-8zm0 14a6 6 0 0 1 0-12z" fill="currentColor"></path></svg></span></div></div><!----><aside class="series-container"><div class="site-brand nav-item"><img class="logo" src="/logo.png" alt="vuepress-theme-reco"><a href="/" class="site-name can-hide">vuepress-theme-reco</a></div><!--[--><!--]--></aside><!--[--><main class="page-container"><h1 class="page-title">启动文件详解</h1><div class="page-info"><span class="xicon-container left"><!--[--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" class="xicon-icon" style="width:18px;height:18px;font-size:18px;color:inherit;"><path d="M16 4a5 5 0 1 1-5 5a5 5 0 0 1 5-5m0-2a7 7 0 1 0 7 7a7 7 0 0 0-7-7z" fill="currentColor"></path><path d="M26 30h-2v-5a5 5 0 0 0-5-5h-6a5 5 0 0 0-5 5v5H6v-5a7 7 0 0 1 7-7h6a7 7 0 0 1 7 7z" fill="currentColor"></path></svg><!--]--><span class="xicon-content" style="color:inherit;font-size:14px;"><!--[-->reco_luan<!--]--></span></span><span class="xicon-container left"><!--[--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" class="xicon-icon" style="width:18px;height:18px;font-size:18px;color:inherit;"><path d="M26 4h-4V2h-2v2h-8V2h-2v2H6c-1.1 0-2 .9-2 2v20c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 22H6V12h20v14zm0-16H6V6h4v2h2V6h8v2h2V6h4v4z" fill="currentColor"></path></svg><!--]--><span class="xicon-content" style="color:inherit;font-size:14px;"><!--[-->2024/7/14<!--]--></span></span><span class="xicon-container left"><!--[--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" class="xicon-icon" style="width:18px;height:18px;font-size:18px;color:inherit;"><path d="M11.17 6l3.42 3.41l.58.59H28v16H4V6h7.17m0-2H4a2 2 0 0 0-2 2v20a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2H16l-3.41-3.41A2 2 0 0 0 11.17 4z" fill="currentColor"></path></svg><!--]--><span class="xicon-content" style="color:inherit;font-size:14px;"><!--[--><!--[--><a href="/categories/stm32/1.html" class="">stm32</a><!--]--><!--]--></span></span><span class="xicon-container left"><!--[--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" class="xicon-icon" style="width:18px;height:18px;font-size:18px;color:inherit;"><path d="M10 14a4 4 0 1 1 4-4a4.005 4.005 0 0 1-4 4zm0-6a2 2 0 1 0 1.998 2.004A2.002 2.002 0 0 0 10 8z" fill="currentColor"></path><path d="M16.644 29.415L2.586 15.354A2 2 0 0 1 2 13.941V4a2 2 0 0 1 2-2h9.941a2 2 0 0 1 1.414.586l14.06 14.058a2 2 0 0 1 0 2.828l-9.943 9.943a2 2 0 0 1-2.829 0zM4 4v9.942L18.058 28L28 18.058L13.942 4z" fill="currentColor"></path></svg><!--]--><span class="xicon-content" style="color:inherit;font-size:14px;"><!--[--><!--[--><a href="/tags/cortex-m3/1.html" class="">cortex-m3</a><!--]--><!--]--></span></span><!----></div><div class="theme-reco-default-content"><div><p>主要分析的文件是STM32CubeMx生成，芯片是STM32F103C8T6。</p><p>启用文件的作用是初始化内存，将已经初始化了的变量的值，从flash复制到ram中，为初始化的变量的内存设置为0，初始化c++相关的全局变量，定义向量表和中断函数。</p><h3 id="简略文件" tabindex="-1"><a class="header-anchor" href="#简略文件"><span>简略文件</span></a></h3><p>删除了注释的简略的的启动文件如下：</p><div class="language-assembly line-numbers-mode" data-highlighter="prismjs" data-ext="assembly" data-title="assembly"><pre class="language-assembly"><code><span class="line">  .syntax unified</span>
+<span class="line">  .cpu cortex-m3</span>
+<span class="line">  .fpu softvfp</span>
+<span class="line">  .thumb</span>
+<span class="line"></span>
+<span class="line">.global g_pfnVectors</span>
+<span class="line">.global Default_Handler</span>
+<span class="line"></span>
+<span class="line">.word _sidata</span>
+<span class="line"></span>
+<span class="line">.word _sdata</span>
+<span class="line"></span>
+<span class="line">.word _edata</span>
+<span class="line"></span>
+<span class="line">.word _sbss</span>
+<span class="line"></span>
+<span class="line">.word _ebss</span>
+<span class="line"></span>
+<span class="line">.equ  BootRAM, 0xF108F85F</span>
+<span class="line"></span>
+<span class="line">  .section .text.Reset_Handler</span>
+<span class="line">  .weak Reset_Handler</span>
+<span class="line">  .type Reset_Handler, %function</span>
+<span class="line">Reset_Handler:</span>
+<span class="line"></span>
+<span class="line">  bl  SystemInit</span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line">  ldr r0, =_sdata</span>
+<span class="line">  ldr r1, =_edata</span>
+<span class="line">  ldr r2, =_sidata</span>
+<span class="line">  movs r3, #0</span>
+<span class="line">  b LoopCopyDataInit</span>
+<span class="line"></span>
+<span class="line">CopyDataInit:</span>
+<span class="line">  ldr r4, [r2, r3]</span>
+<span class="line">  str r4, [r0, r3]</span>
+<span class="line">  adds r3, r3, #4</span>
+<span class="line"></span>
+<span class="line">LoopCopyDataInit:</span>
+<span class="line">  adds r4, r0, r3</span>
+<span class="line">  cmp r4, r1</span>
+<span class="line">  bcc CopyDataInit</span>
+<span class="line">  </span>
+<span class="line">  ldr r2, =_sbss</span>
+<span class="line">  ldr r4, =_ebss</span>
+<span class="line">  movs r3, #0</span>
+<span class="line">  b LoopFillZerobss</span>
+<span class="line"></span>
+<span class="line">FillZerobss:</span>
+<span class="line">  str  r3, [r2]</span>
+<span class="line">  adds r2, r2, #4</span>
+<span class="line"></span>
+<span class="line">LoopFillZerobss:</span>
+<span class="line">  cmp r2, r4</span>
+<span class="line">  bcc FillZerobss</span>
+<span class="line"></span>
+<span class="line">    bl __libc_init_array</span>
+<span class="line">    </span>
+<span class="line">  bl main</span>
+<span class="line">  bx lr</span>
+<span class="line">.size Reset_Handler, .-Reset_Handler</span>
+<span class="line"></span>
+<span class="line">    .section .text.Default_Handler,&quot;ax&quot;,%progbits</span>
+<span class="line">Default_Handler:</span>
+<span class="line">Infinite_Loop:</span>
+<span class="line">  b Infinite_Loop</span>
+<span class="line">  .size Default_Handler, .-Default_Handler</span>
+<span class="line">  </span>
+<span class="line">  .section .isr_vector,&quot;a&quot;,%progbits</span>
+<span class="line">  .type g_pfnVectors, %object</span>
+<span class="line">  .size g_pfnVectors, .-g_pfnVectors</span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line">g_pfnVectors:</span>
+<span class="line"></span>
+<span class="line">  .word _estack</span>
+<span class="line">  .word Reset_Handler</span>
+<span class="line">  .</span>
+<span class="line">  .</span>
+<span class="line">  .</span>
+<span class="line">  .word BootRAM</span>
+<span class="line"></span>
+<span class="line">  .weak NMI_Handler</span>
+<span class="line">  .thumb_set NMI_Handler,Default_Handler</span>
+<span class="line">  .</span>
+<span class="line">  .</span>
+<span class="line">  .</span>
+<span class="line">  .weak USBWakeUp_IRQHandler</span>
+<span class="line">  .thumb_set USBWakeUp_IRQHandler,Default_Handler</span>
+<span class="line"></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="文件头" tabindex="-1"><a class="header-anchor" href="#文件头"><span>文件头</span></a></h3><p>首先，启动文件做了一些描述，告诉编译器该文件的语法等信息</p><div class="language-assembly line-numbers-mode" data-highlighter="prismjs" data-ext="assembly" data-title="assembly"><pre class="language-assembly"><code><span class="line">  /*使用arm汇编和thumb汇编*/</span>
+<span class="line">  .syntax unified</span>
+<span class="line">  /* CPU型号 */</span>
+<span class="line">  .cpu cortex-m3</span>
+<span class="line">  /* 软件FPU */</span>
+<span class="line">  .fpu softvfp</span>
+<span class="line">  /* 接下来的指令使用 thumb汇编 */</span>
+<span class="line">  .thumb</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>.syntax unified</strong>:启用统一语法格式，允许在一个汇编中使用arm和thumb汇编。在某些情况下，可能需要设置为<code> .syntax divided</code>,启用传统的语法模式。</p><p><strong>.cpu cortex-m3</strong>：指定目标处理器为 Cortex-M3，通过**.cpu<strong>指令可以让编译器在编译的时候进行优化。你也能会看到这样的汇编指令：</strong>.arch armv7-m**，这指定了处理的架构。<strong>.CPU</strong>和**.arch**汇编指令，都是让编译器为特定的架构进行优化，在通常情况下，只使用一个汇编命令就足够了。</p><p><strong>.fpu softvfp</strong>：指定浮点的处理方式，也可以在makefile中指定，M3架构是没有硬件fpu，因此使用软件fpu。</p><p><strong>.thumb</strong>:指定接下来的汇编语法为thumb汇编</p><div class="language-assembly line-numbers-mode" data-highlighter="prismjs" data-ext="assembly" data-title="assembly"><pre class="language-assembly"><code><span class="line">.global g_pfnVectors</span>
+<span class="line">.global Default_Handler</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div></div></div><p>声明全局符号，<code>g_pfnVectors</code>和<code>Default_Handler</code>,对链接文件暴露。g_pfnVectors是全局向量表，Default_Handler是默认的异常处理函数。</p><h3 id="使用的变量" tabindex="-1"><a class="header-anchor" href="#使用的变量"><span>使用的变量</span></a></h3><div class="language-assembly line-numbers-mode" data-highlighter="prismjs" data-ext="assembly" data-title="assembly"><pre class="language-assembly"><code><span class="line">/* start address for the initialization values of the .data section. </span>
+<span class="line">defined in linker script */</span>
+<span class="line">.word  _sidata</span>
+<span class="line">/* start address for the .data section. defined in linker script */  </span>
+<span class="line">.word  _sdata</span>
+<span class="line">/* end address for the .data section. defined in linker script */</span>
+<span class="line">.word  _edata</span>
+<span class="line">/* start address for the .bss section. defined in linker script */</span>
+<span class="line">.word  _sbss</span>
+<span class="line">/* end address for the .bss section. defined in linker script */</span>
+<span class="line">.word  _ebss</span>
+<span class="line">/* stack used for SystemInit_ExtMemCtl; always internal RAM used */</span>
+<span class="line"></span>
+<span class="line">.equ  BootRAM, 0xF108F85F</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>.word</strong>：一个32位的地址，这里的5个符号都是在链接文件定义，会在链接文件中解释。</p><p><strong>.equ</strong>：相当于C语言的**#define**</p><h3 id="reset-handler的定义" tabindex="-1"><a class="header-anchor" href="#reset-handler的定义"><span>Reset_Handler的定义</span></a></h3><div class="language-assembly line-numbers-mode" data-highlighter="prismjs" data-ext="assembly" data-title="assembly"><pre class="language-assembly"><code><span class="line">  .section .text.Reset_Handler</span>
+<span class="line">  .weak Reset_Handler</span>
+<span class="line">  .type Reset_Handler, %function</span>
+<span class="line">Reset_Handler:</span>
+<span class="line"></span>
+<span class="line">/* Call the clock system initialization function.*/</span>
+<span class="line">   bl  SystemInit</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>.section</strong>定义一个段，将会占用一些RAM/ROM空间，<strong>.text</strong>表示该段是代码段。<code> .section .text.Reset_Handler</code>表示定义一个叫做<strong>Reset_Handler</strong>函数的代码段。</p><p><strong>.weak</strong>表示该函数是弱定义，如果在其他地方定义过该函数，那么不使用这里的函数。</p><p><strong>.type</strong>：告诉编译器该段的类型，<strong>%function</strong>表示该段是函数类型，让编译器进行优化。</p><p><strong>Reset_Handler:</strong> Reset_Handler函数的代码从这里开始。</p><div class="language-assembly line-numbers-mode" data-highlighter="prismjs" data-ext="assembly" data-title="assembly"><pre class="language-assembly"><code><span class="line">/* Call the clock system initialization function.*/</span>
+<span class="line">  bl  SystemInit</span>
+<span class="line"></span>
+<span class="line">/* Copy the data segment initializers from flash to SRAM */</span>
+<span class="line">  ldr r0, =_sdata   //数据段在内存中的开始地址</span>
+<span class="line">  ldr r1, =_edata	  //数据段在内存中的结束地址</span>
+<span class="line">  ldr r2, =_sidata 	//数据段在flash的储存地址</span>
+<span class="line">  movs r3, #0</span>
+<span class="line">  b LoopCopyDataInit</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code> bl SystemInit</code>：执行SystemInit函数，该函数的作用不在讨论内容中。</p><p><code>ldr r0, =</code>_sdata ...：加载数据段先关的地址到寄存器，同时设置r3寄存器的值为0。</p><p><code>b LoopCopyDataInit</code>:执行LoopCopyDataInit。</p><h4 id="初始化-data" tabindex="-1"><a class="header-anchor" href="#初始化-data"><span>初始化.data</span></a></h4><div class="language-assembly line-numbers-mode" data-highlighter="prismjs" data-ext="assembly" data-title="assembly"><pre class="language-assembly"><code><span class="line">CopyDataInit:</span>
+<span class="line">	//将r2寄存器加上r3寄存器的值，在ROM中对应的值加载到r4寄存器中</span>
+<span class="line">  ldr r4, [r2, r3]</span>
+<span class="line">  //将r4寄存器的值存到，r0寄存器加r3寄存器，在ram的位置</span>
+<span class="line">  str r4, [r0, r3]</span>
+<span class="line">  adds r3, r3, #4</span>
+<span class="line"></span>
+<span class="line">LoopCopyDataInit:</span>
+<span class="line">	//r4等于_sdata地址加 r3 </span>
+<span class="line">  adds r4, r0, r3</span>
+<span class="line">  //比较r4寄存器和_edata的地址，并设置C标志位</span>
+<span class="line">  cmp r4, r1</span>
+<span class="line">  //C标志位为0就执行</span>
+<span class="line">  bcc CopyDataInit</span>
+<span class="line">  </span>
+<span class="line">/* Zero fill the bss segment. */</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>这段代码的作用是初始化.data段的值。</p><p><code>LoopCopyDataInit</code>函数相当于一个for循环，在r4寄存器的值小于_edata时，执行<code>CopyDataInit</code>函数。大于等于就执行<code>/* Zero fill the bss segment. */</code>后面的代码。</p><p><code>CopyDataInit</code>函数的作用是将 flash 的值加载到 ram 中。</p><h4 id="初始化-bss" tabindex="-1"><a class="header-anchor" href="#初始化-bss"><span>初始化.bss</span></a></h4><div class="language-assembly line-numbers-mode" data-highlighter="prismjs" data-ext="assembly" data-title="assembly"><pre class="language-assembly"><code><span class="line">/* Zero fill the bss segment. */</span>
+<span class="line">	//加载bss段的开始地址到r2</span>
+<span class="line">  ldr r2, =_sbss</span>
+<span class="line">  //加载bss段的开始地址到r4</span>
+<span class="line">  ldr r4, =_ebss</span>
+<span class="line">  //设置r3寄存器的值</span>
+<span class="line">  movs r3, #0</span>
+<span class="line">  b LoopFillZerobss</span>
+<span class="line"></span>
+<span class="line">FillZerobss:</span>
+<span class="line">	//将r3寄存器(0)，存到r2寄存器对应的ram中</span>
+<span class="line">  str  r3, [r2]</span>
+<span class="line">  //r2 累加 4</span>
+<span class="line">  adds r2, r2, #4</span>
+<span class="line"></span>
+<span class="line">LoopFillZerobss:</span>
+<span class="line">	//比较r3 和 r4寄存器的值</span>
+<span class="line">  cmp r2, r4</span>
+<span class="line">  //r2 小于 r4就执行</span>
+<span class="line">  bcc FillZerobss</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>这段代码的作用是初始化.bss段的值。代码逻辑和前面一样。不一样的是bss段的值都设置为0。</p><h4 id="c-相关的初始化与调用main" tabindex="-1"><a class="header-anchor" href="#c-相关的初始化与调用main"><span>C++相关的初始化与调用main</span></a></h4><div class="language-assembly line-numbers-mode" data-highlighter="prismjs" data-ext="assembly" data-title="assembly"><pre class="language-assembly"><code><span class="line">/* Call static constructors */</span>
+<span class="line">    bl __libc_init_array</span>
+<span class="line">/* Call the application&#39;s entry point.*/</span>
+<span class="line">  bl main</span>
+<span class="line">  bx lr</span>
+<span class="line">.size Reset_Handler, .-Reset_Handler</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>bl __libc_init_array</code>:初始化C++相关的全局和静态对象。由编译器提供。</p><p><code>bl main</code>:将会执行main函数，同时设置lr寄存器。</p><p><code>bx lr</code>当执行完成main函数后，会执行这行</p><p><code>.size Reset_Handler, .-Reset_Handler</code>，<code>.size</code>计算Reset_Handler段的大小，告诉给链接文件该.text类型的段大小。</p><h3 id="default-handler" tabindex="-1"><a class="header-anchor" href="#default-handler"><span>Default_Handler</span></a></h3><div class="language-assembly line-numbers-mode" data-highlighter="prismjs" data-ext="assembly" data-title="assembly"><pre class="language-assembly"><code><span class="line">    .section .text.Default_Handler,&quot;ax&quot;,%progbits</span>
+<span class="line">Default_Handler:</span>
+<span class="line">Infinite_Loop:</span>
+<span class="line">  b Infinite_Loop</span>
+<span class="line">  .size Default_Handler, .-Default_Handler</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>定义一个代码段，<code>Default_Handler</code>，这是默认的异常处理函数，为死循环。<code>a</code>表示该段可以被分配到程序中，<code>x</code>表示该段包含可执行代码，<code>%progbits</code>是<code>.type</code>,表示该段包含有用的数据或代码。</p><h3 id="异常向量表" tabindex="-1"><a class="header-anchor" href="#异常向量表"><span>异常向量表</span></a></h3><div class="language-assembly line-numbers-mode" data-highlighter="prismjs" data-ext="assembly" data-title="assembly"><pre class="language-assembly"><code><span class="line">  .section .isr_vector,&quot;a&quot;,%progbits</span>
+<span class="line">  .type g_pfnVectors, %object</span>
+<span class="line">  .size g_pfnVectors, .-g_pfnVectors</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>.section .isr_vector,&quot;a&quot;,%progbits</code>，定义<code>.isr_vector</code>段，<code>a</code>表示该段是可分配的%progbits`表示该段含有数据或者代码。</p><p><code> .type g_pfnVectors, %object</code>，在<code>.isr_vector</code>段存储了<code>g_pfnVectors</code>,<code>%object</code>表示<code>g_pfnVectors</code>为数据对象（变量或数组。</p><p><code> .size g_pfnVectors, .-g_pfnVectors</code>计算<code>g_pfnVectors</code>的大小，计算方式是当前位置减去<code>g_pfnVectors</code>的定义位置。</p><div class="language-assembly line-numbers-mode" data-highlighter="prismjs" data-ext="assembly" data-title="assembly"><pre class="language-assembly"><code><span class="line">g_pfnVectors:</span>
+<span class="line"></span>
+<span class="line">  .word _estack</span>
+<span class="line">  .word Reset_Handler</span>
+<span class="line">  .</span>
+<span class="line">  .</span>
+<span class="line">  .</span>
+<span class="line">  .word BootRAM</span>
+<span class="line"></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>定义<code>g_pfnVectors</code>向量表，每个元素占用了32位的大小，向量表的第一个元素是栈顶的位置，除了最后一个元素，剩下的都是各种异常中断的函数地址。</p><p>M3、M4内核在上电后，会将向量表的第一个元素加载到SP寄存器中，然后执行向量表的第二个元素。</p><h3 id="异常handler" tabindex="-1"><a class="header-anchor" href="#异常handler"><span>异常Handler</span></a></h3><div class="language-assembly line-numbers-mode" data-highlighter="prismjs" data-ext="assembly" data-title="assembly"><pre class="language-assembly"><code><span class="line">  .weak NMI_Handler</span>
+<span class="line">  .thumb_set NMI_Handler,Default_Handler</span>
+<span class="line">  .</span>
+<span class="line">  .</span>
+<span class="line">  .</span>
+<span class="line">  .weak USBWakeUp_IRQHandler</span>
+<span class="line">  .thumb_set USBWakeUp_IRQHandler,Default_Handler</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>.weak NMI_Handler</code>表示NMI_Handler是一个弱定义函数，如果在其他地方定义，则不使用此处定义的函数。</p><p><code>.thumb_set NMI_Handler,Default_Handler</code>设置<code>NMI_Handler</code>的地址为<code>Default_Handler</code>的地址。</p></div></div><footer class="page-meta"><div class="meta-item edit-link"><span class="xicon-container left meta-item-label"><!--[--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" class="xicon-icon" style="width:20px;height:20px;font-size:20px;color:inherit;"><path d="M2 26h28v2H2z" fill="currentColor"></path><path d="M25.4 9c.8-.8.8-2 0-2.8l-3.6-3.6c-.8-.8-2-.8-2.8 0l-15 15V24h6.4l15-15zm-5-5L24 7.6l-3 3L17.4 7l3-3zM6 22v-3.6l10-10l3.6 3.6l-10 10H6z" fill="currentColor"></path></svg><!--]--><span class="xicon-content" style="color:inherit;font-size:14px;"><!--[-->Edit this page<!--]--></span></span></div><!----></footer><!----><!----></main><!--]--><div class="page-catalog-container"><h5 class="tip">ON THIS PAGE</h5><ul><!--[--><!--[--><li class="page-catalog-menu-depth_3"><a aria-current="page" href="/blogs/huibian/qidongwenjianxiangjie.html#简略文件" class="router-link-active router-link-exact-active link page-catalog-item page-catalog-item" aria-label="简略文件"><!--[--><!--]--><span class="xicon-container left"><!--[--><!----><!--]--><span class="xicon-content" style="color:inherit;font-size:14px;"><!--[-->简略文件<!--]--></span></span><!--[--><!--]--></a></li><!--]--><!--[--><li class="page-catalog-menu-depth_3"><a aria-current="page" href="/blogs/huibian/qidongwenjianxiangjie.html#文件头" class="router-link-active router-link-exact-active link page-catalog-item page-catalog-item" aria-label="文件头"><!--[--><!--]--><span class="xicon-container left"><!--[--><!----><!--]--><span class="xicon-content" style="color:inherit;font-size:14px;"><!--[-->文件头<!--]--></span></span><!--[--><!--]--></a></li><!--]--><!--[--><li class="page-catalog-menu-depth_3"><a aria-current="page" href="/blogs/huibian/qidongwenjianxiangjie.html#使用的变量" class="router-link-active router-link-exact-active link page-catalog-item page-catalog-item" aria-label="使用的变量"><!--[--><!--]--><span class="xicon-container left"><!--[--><!----><!--]--><span class="xicon-content" style="color:inherit;font-size:14px;"><!--[-->使用的变量<!--]--></span></span><!--[--><!--]--></a></li><!--]--><!--[--><li class="page-catalog-menu-depth_3"><a aria-current="page" href="/blogs/huibian/qidongwenjianxiangjie.html#reset-handler的定义" class="router-link-active router-link-exact-active link page-catalog-item page-catalog-item" aria-label="Reset_Handler的定义"><!--[--><!--]--><span class="xicon-container left"><!--[--><!----><!--]--><span class="xicon-content" style="color:inherit;font-size:14px;"><!--[-->Reset_Handler的定义<!--]--></span></span><!--[--><!--]--></a></li><!--]--><!--[--><li class="page-catalog-menu-depth_3"><a aria-current="page" href="/blogs/huibian/qidongwenjianxiangjie.html#default-handler" class="router-link-active router-link-exact-active link page-catalog-item page-catalog-item" aria-label="Default_Handler"><!--[--><!--]--><span class="xicon-container left"><!--[--><!----><!--]--><span class="xicon-content" style="color:inherit;font-size:14px;"><!--[-->Default_Handler<!--]--></span></span><!--[--><!--]--></a></li><!--]--><!--[--><li class="page-catalog-menu-depth_3"><a aria-current="page" href="/blogs/huibian/qidongwenjianxiangjie.html#异常向量表" class="router-link-active router-link-exact-active link page-catalog-item page-catalog-item" aria-label="异常向量表"><!--[--><!--]--><span class="xicon-container left"><!--[--><!----><!--]--><span class="xicon-content" style="color:inherit;font-size:14px;"><!--[-->异常向量表<!--]--></span></span><!--[--><!--]--></a></li><!--]--><!--[--><li class="page-catalog-menu-depth_3"><a aria-current="page" href="/blogs/huibian/qidongwenjianxiangjie.html#异常handler" class="router-link-active router-link-exact-active link page-catalog-item page-catalog-item" aria-label="异常Handler"><!--[--><!--]--><span class="xicon-container left"><!--[--><!----><!--]--><span class="xicon-content" style="color:inherit;font-size:14px;"><!--[-->异常Handler<!--]--></span></span><!--[--><!--]--></a></li><!--]--><!--]--></ul></div></div><!--[--><!----><!----><!--]--><!--]--></div>
+    <script type="module" src="/assets/app-Pv2J7xBQ.js" defer></script>
+  </body>
+</html>
